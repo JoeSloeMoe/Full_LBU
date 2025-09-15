@@ -1450,7 +1450,7 @@
 					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$lbu_Physician_Temp" operation="divide" value="10"> 
 						<requirement name="CVarCompare" cvar="$lbu_PerkLevel" operation="GTE" value="1"/></triggered_effect>
 						
-					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$lbu_Kill_Bonus_Total" operation="multiply" value="@lbu_Physician_Temp"> <!--see buffs for lbu_Kill_Bonus_Percent decription and intialisation-->
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$lbu_Kill_Bonus_Total" operation="multiply" value="@$lbu_Physician_Temp"> <!--see buffs for lbu_Kill_Bonus_Percent decription and intialisation-->
 						<requirement name="CVarCompare" cvar="$lbu_PerkLevel" operation="GTE" value="1"/></triggered_effect>
 					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$lbu_Kill_Bonus_Total" operation="multiply" value="@$lbu_PerkLevel"> <!--levels multiplier, number player points in Perk-->
 						<requirement name="CVarCompare" cvar="$lbu_PerkLevel" operation="GTE" value="1"/></triggered_effect>
@@ -2801,3 +2801,4 @@
 	<!--END buff name="perkPhysician"-->
 	
 </configs>
+
