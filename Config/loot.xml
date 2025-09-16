@@ -68,7 +68,19 @@
 			<item name="trapsSkillMagazine" />
 		</lootgroup>
 	</insertAfter>	
-	
+	<remove xpath="/lootcontainers/lootgroup[@name='groupRollingToolbox03']"/>
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupRollingToolbox02']">
+		<lootgroup name="groupRollingToolbox03">
+			<item name="meleeToolPaintTool" loot_prob_template="med"/>
+			<item name="repairToolsSkillMagazine" loot_prob_template="low"/>
+			<item name="workstationSkillMagazine" loot_prob_template="low"/>
+			<item name="vehiclesSkillMagazine" loot_prob_template="low"/>
+			<item name="meleeToolWireTool" loot_prob_template="medLow"/>
+			<item group="groupToolsT1Wrench" loot_prob_template="low"/>
+			<item group="groupToolsT1ClawHammer" loot_prob_template="veryLow"/>
+			<item name="resourceForgedSteel" count="1,4" loot_prob_template="veryLow"/>
+		</lootgroup>
+	</insertAfter>	
 	<remove xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT0']/item[@name='vehiclesSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT1']/item[@name='vehiclesSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT2']/item[@name='vehiclesSkillMagazine']"/>
@@ -91,9 +103,6 @@
 	<remove xpath="/lootcontainers/lootgroup[@name='groupMedicalPileSmall']/item[@name='medicalSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupMedicalPileMed']/item[@name='medicalSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupMedicalPileLarge']/item[@name='medicalSkillMagazine']"/>
-	
-	<remove xpath="/lootcontainers/lootgroup[@name='groupRollingToolbox03']/item[@name='harvestingToolsSkillMagazine']"/>
-	<remove xpath="/lootcontainers/lootgroup[@name='groupRollingToolbox03']/item[@name='salvageToolsSkillMagazine']"/>
 	
 	<remove xpath="/lootcontainers/lootgroup[@name='groupAmbulance']/item[@name='medicalSkillMagazine']"/>
 	
@@ -177,7 +186,9 @@
 	<remove  xpath="lootcontainers/lootgroup[@name='groupCrackabookCrate02']/item[@group='skillMagazines']"/>
 	
 	<remove  xpath="lootcontainers/lootgroup[@name='groupZpackStrong02']/item[@group='booksAllScaled']"/>
-	
+	<remove  xpath="lootcontainers/lootgroup[@name='groupHiddenStash02']/item[@name='workstationSkillMagazine']"/>
+	<remove  xpath="lootcontainers/lootgroup[@name='groupAirDrop03']/item[@name='workstationSkillMagazine']"/>
+
 	<!--modify book case and mailbox etc loot-->
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupBookcase01']/item[@group='skillMagazines']" name="count">1,2</setattribute>
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupBookcase01']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
@@ -232,9 +243,15 @@
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupMoPower04']/item[@group='groupElectricalDevices']" name="loot_prob_template">low</setattribute>
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupConstructionCrate02']/item[@group='groupElectricalDevices']" name="loot_prob_template">low</setattribute>
 
+	<setattribute  xpath="lootcontainers/lootgroup[@name='groupWorkbenchLoot04']/item[@name='workstationSkillMagazine']" name="loot_prob_template">low</setattribute>
+	<setattribute  xpath="lootcontainers/lootgroup[@name='groupChemistryStationLoot03']/item[@name='workstationSkillMagazine']" name="loot_prob_template">low</setattribute>
+	<setattribute  xpath="lootcontainers/lootgroup[@name='groupDewCollectorLoot01']/item[@name='workstationSkillMagazine']" name="loot_prob_template">low</setattribute>
+	<setattribute  xpath="lootcontainers/lootgroup[@name='groupDewCollectorLoot02']/item[@name='workstationSkillMagazine']" name="loot_prob_template">low</setattribute>
+	<setattribute  xpath="lootcontainers/lootgroup[@name='groupLootChestBonusItems']/item[@name='workstationSkillMagazine']" name="loot_prob_template">low</setattribute>
+	<setattribute  xpath="lootcontainers/lootgroup[@name='groupConstructionCrate02']/item[@name='workstationSkillMagazine']" name="loot_prob_template">low</setattribute>
+	
 	<!--lbu_MULTIPLAYERTURRETS_START-->
 	<!--remove or comment out the following to remve Turrets/robotics from Learn By Use for multiplayer if needed-->
-	<remove xpath="/lootcontainers/lootgroup[@name='groupRollingToolbox03']/item[@name='roboticsSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupMoPowerShelvesBooks']/item[@name='roboticsSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupBotSchematics']/item[@name='roboticsSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupMoPower02']/item[@name='roboticsSkillMagazine']"/>
