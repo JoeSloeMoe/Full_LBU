@@ -453,7 +453,8 @@
 			<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" buff="buffBoomstickPellets">
 				<requirement name="!HasBuff" buff="buffBoomstickPellets"/>			
 			</triggered_effect>
-			
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$medicRegHealthIncreaseSpeed" operation="set" value="2">
+				<requirement name="CVarCompare" cvar="$medicRegHealthIncreaseSpeed" operation="LT" value="2"/></triggered_effect>
 		</effect_group>
 		
 		<!--if lbu_HardcoreMode is turned on, reset Learn By Use progress on death-->
@@ -2801,4 +2802,5 @@
 	<!--END buff name="perkPhysician"-->
 	
 </configs>
+
 
