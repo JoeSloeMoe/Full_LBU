@@ -950,7 +950,10 @@
 					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="lbu_Turret_Prob" operation="set" value="1"/>
 					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="lbu_Medical_Prob" operation="set" value="1"/>
 			</effect_group>
-			
+			<effect_group>
+				<!--set the medical regen speed to a base level, this is the amount of time a bandage will tick down-->
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$medicRegHealthIncreaseSpeed" operation="set" value="2"/>
+			</effect_group>
 			<!--recalculate bartering -->
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="perkBarteringLevelTrack" operation="set" value="1"/>
@@ -2803,6 +2806,7 @@
 	<!--END buff name="perkPhysician"-->
 	
 </configs>
+
 
 
 
