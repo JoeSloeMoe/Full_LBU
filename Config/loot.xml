@@ -28,6 +28,9 @@
 			<item name="resourcePaper" count="50"/>
 			<item name="resourcePaper" count="35"/>
 			<item name="resourcePaper" count="15"/>
+			<item name="resourcePaper" count="41"/>
+			<item name="resourcePaper" count="31"/>
+			<item name="resourcePaper" count="11"/>
 		</lootgroup>
 
 		<lootgroup name="groupQuestRewardSkillMagazinesAll01" count="3">
@@ -278,5 +281,6 @@
 	<!--END lbu_MULTIPLAYERTURRETS_START-->
 
 		
+
 
 </configs>
