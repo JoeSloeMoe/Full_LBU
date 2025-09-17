@@ -2195,7 +2195,7 @@
 		See buffs:lbu_Kill_Bonus_Percent config variable for the amount of change
 		This perk has no effect if the config var buffs:lbu_Kill_Bonus is set to 0-->
 	<insertAfter xpath="/progression/perks/perk[@name='perkLuckyLooter']">
-		<perk name="perkSkilledLabourer" parent="skillGeneralPerks" name_key="perkSkilledLabourerName" desc_key="perkSkilledLabourerDesc" icon="ui_game_symbol_perk" override_cost="2,2,2,2,3">
+		<perk name="perkSkilledLabourer" parent="skillGeneralPerks" name_key="perkSkilledLabourerName" desc_key="perkSkilledLabourerDesc" icon="ui_game_symbol_perk" override_cost="2,2,2,3,3">
 			<effect_group>
 				<!-- add buff to recalculate Learn By Use progress speed -->
 				<triggered_effect trigger="onPerkLevelChanged"  action="AddBuff" buff="buffLbuPerkLevelingSpeedChanged"/>
@@ -2209,5 +2209,6 @@
 		</perk>
 	</insertAfter>	
 	<!--end Learn-By-Use ALL code -->
+
 
 </configs>
