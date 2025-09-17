@@ -161,7 +161,7 @@
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Salvage_Kill_XP_Base" operation="set" value="40"/> <!--default: 40-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_SpearMaster_Kill_XP_Base" operation="set" value="36"/> <!--default: 36-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Boomstick_Kill_XP_Base" operation="set" value="48"/> <!--default: 48-->
-			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_PummelPete_Kill_XP_Base" operation="set" value="36"/> <!--default: 36-->
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_PummelPete_Kill_XP_Base" operation="set" value="30"/> <!--default: 30-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_SkullCrusher_Kill_XP_Base" operation="set" value="40"/> <!--default: 40-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Brawler_Kill_XP_Base" operation="set" value="36"/> <!--default: 36-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_MachineGunner_Kill_XP_Base" operation="set" value="32"/> <!--default: 32-->
@@ -2806,6 +2806,7 @@
 	<!--END buff name="perkPhysician"-->
 	
 </configs>
+
 
 
 
