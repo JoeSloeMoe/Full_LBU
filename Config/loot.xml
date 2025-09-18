@@ -28,9 +28,9 @@
 			<item name="resourcePaper" count="50"/>
 			<item name="resourcePaper" count="35"/>
 			<item name="resourcePaper" count="15"/>
-			<item name="resourcePaper" count="41"/>
-			<item name="resourcePaper" count="31"/>
-			<item name="resourcePaper" count="11"/>
+			<item name="resourcePaper" count="50"/>
+			<item name="resourcePaper" count="35"/>
+			<item name="resourcePaper" count="15"/>
 		</lootgroup>
 
 		<lootgroup name="groupQuestRewardSkillMagazinesAll01" count="3">
@@ -191,6 +191,7 @@
 	<remove  xpath="lootcontainers/lootgroup[@name='groupZpackStrong02']/item[@group='booksAllScaled']"/>
 	<remove  xpath="lootcontainers/lootgroup[@name='groupHiddenStash02']/item[@name='workstationSkillMagazine']"/>
 	<remove  xpath="lootcontainers/lootgroup[@name='groupAirDrop03']/item[@name='workstationSkillMagazine']"/>
+	<remove  xpath="lootcontainers/lootgroup[@name='groupBackpacks01']/item[@group='skillMagazines']"/>
 
 	<!--modify book case and mailbox etc loot-->
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupBookcase01']/item[@group='skillMagazines']" name="count">1,2</setattribute>
@@ -204,9 +205,8 @@
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupQuestSchematics']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupSingleBooks01']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupHiddenStash01']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
-	<setattribute  xpath="lootcontainers/lootgroup[@name='groupBackpacks01']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupBackpacksBooks']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
-	<setattribute  xpath="lootcontainers/lootgroup[@name='groupBackpacks01']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
+	<setattribute  xpath="lootcontainers/lootgroup[@name='groupBackpacksBooks']/item[@group='perkBooks']" name="loot_prob_template">veryLow</setattribute>
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupSchematicsAll']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
 	<setattribute  xpath="lootcontainers/lootgroup[@name='booksRareOnlyScaled']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupCampingTents01']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
@@ -281,6 +281,5 @@
 	<!--END lbu_MULTIPLAYERTURRETS_START-->
 
 		
-
 
 </configs>
