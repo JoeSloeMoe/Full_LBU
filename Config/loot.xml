@@ -133,11 +133,11 @@
 	
 	<remove xpath="/lootcontainers/lootgroup[@name='groupZpackLab02']/item[@name='roboticsSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupZpackLab02']/item[@name='medicalSkillMagazine']"/>
-
+	<remove xpath="/lootcontainers/lootgroup[@name='groupZpackLab02']/item[@name='workstationSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupZpackUtility02']/item[@name='harvestingToolsSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupZpackUtility02']/item[@name='salvageToolsSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupZpackUtility02']/item[@name='sledgehammersSkillMagazine']"/>
-	
+	<remove xpath="/lootcontainers/lootgroup[@name='groupZpackUtility02']/item[@name='workstationSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupZpackSoldier02']/item[@name='handgunsSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupZpackSoldier02']/item[@name='shotgunsSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupZpackSoldier02']/item[@name='riflesSkillMagazine']"/>
@@ -187,6 +187,7 @@
 	<remove xpath="/lootcontainers/lootgroup[@name='groupLootChestBonusItems']/item[@name='salvageToolsSkillMagazine']"/>
 	<remove  xpath="lootcontainers/lootgroup[@name='booksAllScaled']/item[@group='skillMagazines']"/>
 	<remove  xpath="lootcontainers/lootgroup[@name='groupCrackabookCrate02']/item[@group='skillMagazines']"/>
+	<remove  xpath="lootcontainers/lootgroup[@name='groupDewCollectorLoot01']/item[@name='workstationSkillMagazine']"/>
 	
 	<remove  xpath="lootcontainers/lootgroup[@name='groupZpackStrong02']/item[@group='booksAllScaled']"/>
 	<remove  xpath="lootcontainers/lootgroup[@name='groupHiddenStash02']/item[@name='workstationSkillMagazine']"/>
@@ -246,13 +247,15 @@
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupMoPower04']/item[@group='groupElectricalDevices']" name="loot_prob_template">low</setattribute>
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupConstructionCrate02']/item[@group='groupElectricalDevices']" name="loot_prob_template">low</setattribute>
 
-	<setattribute  xpath="lootcontainers/lootgroup[@name='groupWorkbenchLoot04']/item[@name='workstationSkillMagazine']" name="loot_prob_template">low</setattribute>
-	<setattribute  xpath="lootcontainers/lootgroup[@name='groupChemistryStationLoot03']/item[@name='workstationSkillMagazine']" name="loot_prob_template">low</setattribute>
-	<setattribute  xpath="lootcontainers/lootgroup[@name='groupDewCollectorLoot01']/item[@name='workstationSkillMagazine']" name="loot_prob_template">low</setattribute>
-	<setattribute  xpath="lootcontainers/lootgroup[@name='groupDewCollectorLoot02']/item[@name='workstationSkillMagazine']" name="loot_prob_template">low</setattribute>
-	<setattribute  xpath="lootcontainers/lootgroup[@name='groupLootChestBonusItems']/item[@name='workstationSkillMagazine']" name="loot_prob_template">low</setattribute>
-	<setattribute  xpath="lootcontainers/lootgroup[@name='groupConstructionCrate02']/item[@name='workstationSkillMagazine']" name="loot_prob_template">low</setattribute>
+	<setattribute  xpath="lootcontainers/lootgroup[@name='groupWorkbenchLoot04']/item[@name='workstationSkillMagazine']" name="loot_prob_template">veryLow</setattribute>
+	<setattribute  xpath="lootcontainers/lootgroup[@name='groupChemistryStationLoot03']/item[@name='workstationSkillMagazine']" name="loot_prob_template">veryLow</setattribute>
 	
+	<setattribute  xpath="lootcontainers/lootgroup[@name='groupDewCollectorLoot02']/item[@name='workstationSkillMagazine']" name="loot_prob_template">veryLow</setattribute>
+	<setattribute  xpath="lootcontainers/lootgroup[@name='groupLootChestBonusItems']/item[@name='workstationSkillMagazine']" name="loot_prob_template">veryLow</setattribute>
+	<setattribute  xpath="lootcontainers/lootgroup[@name='groupConstructionCrate02']/item[@name='workstationSkillMagazine']" name="loot_prob_template">veryLow</setattribute>
+	<setattribute  xpath="lootcontainers/lootgroup[@name='groupWorkingStiffs03']/item[@group='groupWorkingStiffsBooks']" name="loot_prob_template">low</setattribute>
+	
+
 	<!--lbu_MULTIPLAYERTURRETS_START-->
 	<!--remove or comment out the following to remve Turrets/robotics from Learn By Use for multiplayer if needed-->
 	<remove xpath="/lootcontainers/lootgroup[@name='groupMoPowerShelvesBooks']/item[@name='roboticsSkillMagazine']"/>
