@@ -80,7 +80,7 @@
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Physician_XP_Multiplier" operation="set" value="1.0"/> <!--default: 1.0-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_HiddenStrike_XP_Multiplier" operation="set" value="1.0"/> <!--default: 1.0-->
 			<!-- END Set XP Multipliers -->
-		
+			
 			<!-- The learn by use levelling curve (the amount of xp needed per level) is a basic compound interest curve
 				There are 3 variables for compound interest: 1) the initial deposit (lbu_DefaultInitialIncrement), 2) the interest per year (per lbu level),
 						3) the number of years (100 levels - kindof hard set, requires editing in the individual perk code below to change). 
@@ -161,7 +161,7 @@
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Salvage_Kill_XP_Base" operation="set" value="40"/> <!--default: 40-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_SpearMaster_Kill_XP_Base" operation="set" value="36"/> <!--default: 36-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Boomstick_Kill_XP_Base" operation="set" value="48"/> <!--default: 48-->
-			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_PummelPete_Kill_XP_Base" operation="set" value="30"/> <!--default: 30-->
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_PummelPete_Kill_XP_Base" operation="set" value="36"/> <!--default: 36-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_SkullCrusher_Kill_XP_Base" operation="set" value="40"/> <!--default: 40-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Brawler_Kill_XP_Base" operation="set" value="36"/> <!--default: 36-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_MachineGunner_Kill_XP_Base" operation="set" value="32"/> <!--default: 32-->
@@ -173,7 +173,7 @@
 			<!--lbu_Bartering_XP_Base & lbu_DaringAdv_XP_Base are multipliers see buffLbuBartering & buffLbuDaringAdv--> 
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Bartering_XP_Base" operation="set" value="6"/> <!--default: 6-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_DaringAdv_XP_Base" operation="set" value="6"/> <!--default: 6-->
-			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Physician_Use_XP_Base" operation="set" value="320"/> <!--default: 320 high because number of medical items used is far less than the number of bullets sprayed, rocks bashed etc-->
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Physician_Use_XP_Base" operation="set" value="300"/> <!--default: 300 high because number of medical items used is far less than the number of bullets sprayed, rocks bashed etc-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_HiddenStrike_Kill_XP_Base" operation="set" value="62"/> <!--default: 62-->
 			
 			<!--multiply each of the above vars by their respective INDIVIDUAL XP weight/percent increase (lbu_<PERKNAME>_Multiplier) from the config settings-->
@@ -497,7 +497,7 @@
 	<!--code for Learn By Use functionality-->
 	<append xpath="/buffs">
 	
-		<!--tracks passice loot probabilities for all perks - they are done here because if they are done in the progression.xml file they 
+		<!--tracks passive loot probabilities for all perks - they are done here because if they are done in the progression.xml file they 
 			will appear as 'LootProb' in the players perk level ui screen, they are hidden here-->
 		<buff name="buffTrackPerkProbabilities" name_key="buffHardcoreModeName" hidden="true" remove_on_death="false">
 			<stack_type value="ignore"/>
@@ -1449,13 +1449,11 @@
 						<requirement name="CVarCompare" cvar="$lbu_PerkLevel" operation="LTE" value="0"/></triggered_effect>
 					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$lbu_Kill_Bonus_Total" operation="set" value="@lbu_Physician_Use_XP_Base"> <!--see buffs for lbu_DeadEye_Kill_XP decription and intialisation-->
 						<requirement name="CVarCompare" cvar="$lbu_PerkLevel" operation="GTE" value="1"/></triggered_effect>
-					<!--because the physician xp amount is so high (somewhere around 300 or so) the percentage change can have a massive effect. so divide the percentage change by 10-->
-					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$lbu_Physician_Temp" operation="set" value="@lbu_Kill_Bonus_Percent"> 
-						<requirement name="CVarCompare" cvar="$lbu_PerkLevel" operation="GTE" value="1"/></triggered_effect>
-					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$lbu_Physician_Temp" operation="divide" value="10"> 
+					<!--because the physician xp amount is so high (somewhere around 300 or so) the percentage change can have a massive effect. so divide the total change by 10-->
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$lbu_Kill_Bonus_Total" operation="divide" value="10"> 
 						<requirement name="CVarCompare" cvar="$lbu_PerkLevel" operation="GTE" value="1"/></triggered_effect>
 						
-					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$lbu_Kill_Bonus_Total" operation="multiply" value="@$lbu_Physician_Temp"> <!--see buffs for lbu_Kill_Bonus_Percent decription and intialisation-->
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$lbu_Kill_Bonus_Total" operation="multiply" value="@lbu_Kill_Bonus_Percent"> <!--see buffs for lbu_Kill_Bonus_Percent decription and intialisation-->
 						<requirement name="CVarCompare" cvar="$lbu_PerkLevel" operation="GTE" value="1"/></triggered_effect>
 					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$lbu_Kill_Bonus_Total" operation="multiply" value="@$lbu_PerkLevel"> <!--levels multiplier, number player points in Perk-->
 						<requirement name="CVarCompare" cvar="$lbu_PerkLevel" operation="GTE" value="1"/></triggered_effect>
@@ -2806,8 +2804,3 @@
 	<!--END buff name="perkPhysician"-->
 	
 </configs>
-
-
-
-
-
