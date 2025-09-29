@@ -656,4 +656,62 @@
 		In order for the player to gain experience with demolition they need to be able to use something to start the learning curve.
 		And should be craftable by hand, see recipes.xml-->
 	<remove xpath="/items/item[@name='thrownAmmoPipeBomb']/property[@name='UnlockedBy']"/>
+	
+	<!--remove skill magazines from legendary crafting bundkes-->
+	<set xpath ="/items/item[@name='questRewardLegendarySteelKnuckleCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">resourceLegendaryParts,meleeWpnKnucklesT3SteelKnucklesParts</set> 
+	<set xpath ="/items/item[@name='questRewardLegendaryMacheteCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">resourceLegendaryParts,meleeWpnBladeT3MacheteParts</set> 
+	<set xpath ="/items/item[@name='questRewardLegendarySteelClubCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">resourceLegendaryParts,meleeWpnClubT3SteelClubParts</set> 
+	<set xpath ="/items/item[@name='questRewardLegendarySteelSledgehammerCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">resourceLegendaryParts,meleeWpnSledgeT3SteelSledgehammerParts</set> 
+	<set xpath ="/items/item[@name='questRewardLegendaryBowCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">resourceLegendaryParts,gunBowT1WoodenBowParts,ammoArrowIron</set> 
+	<set xpath ="/items/item[@name='questRewardLegendarySteelSpearCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">resourceLegendaryParts,meleeWpnSpearT3SteelSpearParts</set> 
+	<set xpath ="/items/item[@name='questRewardLegendaryBatonCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">resourceLegendaryParts,meleeWpnBatonT2StunBatonParts</set> 
+	<set xpath ="/items/item[@name='questRewardLegendarySteelToolsCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">resourceLegendaryParts,meleeToolAllSteelParts</set> 
+	<set xpath ="/items/item[@name='questRewardLegendaryMotorToolsCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">resourceLegendaryParts,meleeToolAxeT3ChainsawParts,ammoGasCan</set> 	
+	<set xpath ="/items/item[@name='questRewardLegendaryHandgunCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">resourceLegendaryParts,gunHandgunT1PistolParts,ammo44MagnumBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardLegendaryShotgunCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">resourceLegendaryParts,gunShotgunT1DoubleBarrelParts,ammoShotgunShell</set> 
+	<set xpath ="/items/item[@name='questRewardLegendaryRifleCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">resourceLegendaryParts,gunRifleT1HuntingRifleParts,ammo762mmBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardLegendaryMachineGunCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">resourceLegendaryParts,gunMGT1AK47Parts,ammo762mmBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardLegendaryRocketLauncherCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">resourceLegendaryParts,gunExplosivesT3RocketLauncherParts,ammoRocketFrag</set> 
+	<set xpath ="/items/item[@name='questRewardLegendaryRoboticsCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">resourceLegendaryParts,gunBotRoboticsParts,ammoJunkTurretRegular</set> 
+
+	<set xpath ="/items/item[@name='questRewardPipeBatonBundle']/property[@class='Action0']/property[@name='Create_item']/@value">meleeWpnBatonT0PipeBaton,gunBotRoboticsParts</set> 
+	<set xpath ="/items/item[@name='questRewardSteelKnuckleCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">meleeWpnKnucklesT3SteelKnucklesParts</set> 	
+	<set xpath ="/items/item[@name='questRewardSteelClubCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">meleeWpnClubT3SteelClubParts</set> 
+	<set xpath ="/items/item[@name='questRewardSteelSledgehammerCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">meleeWpnSledgeT3SteelSledgehammerParts</set> 
+	<set xpath ="/items/item[@name='questRewardBowCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunBowT1WoodenBowParts,ammoArrowIron</set> 
+	<set xpath ="/items/item[@name='questRewardSteelSpearCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">meleeWpnSpearT3SteelSpearParts</set> 
+	<set xpath ="/items/item[@name='questRewardHandgunCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunHandgunT1PistolParts,ammo9mmBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardShotgunCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunShotgunT1DoubleBarrelParts,ammoShotgunShell</set> 
+	<set xpath ="/items/item[@name='questRewardRifleCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunRifleT1HuntingRifleParts,ammo762mmBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardMachineGunCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunMGT1AK47Parts,ammo762mmBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardRocketLauncherCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunExplosivesT3RocketLauncherParts,ammoRocketFrag</set> 
+	<set xpath ="/items/item[@name='questRewardBatonCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">meleeWpnBatonT2StunBatonParts</set> 
+	<set xpath ="/items/item[@name='questRewardRoboticsCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunBotRoboticsParts,ammoJunkTurretRegular</set> 
+	<set xpath ="/items/item[@name='questRewardSteelToolsCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">meleeToolAllSteelParts</set> 
+	<set xpath ="/items/item[@name='questRewardMotorToolsCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">meleeToolAxeT3ChainsawParts,ammoGasCan</set> 
+	<set xpath ="/items/item[@name='questRewardMacheteCraftingBundle']/property[@class='Action0']/property[@name='Create_item']/@value">meleeWpnBladeT3MacheteParts</set> 
+
+	<set xpath ="/items/item[@name='questRewardT0HandgunBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunHandgunT0PipePistol,ammo9mmBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardT0RifleBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunRifleT0PipeRifle,ammo762mmBulletBall</set> 	
+	<set xpath ="/items/item[@name='questRewardT0ShotgunBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunShotgunT0PipeShotgun,ammoShotgunShell</set> 
+	<set xpath ="/items/item[@name='questRewardT0MachineGunBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunMGT0PipeMachineGun,ammo762mmBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardT1HandgunBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunHandgunT1Pistol,ammo9mmBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardT1ShotgunBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunShotgunT1DoubleBarrel,ammoShotgunShell</set> 
+	<set xpath ="/items/item[@name='questRewardT1RifleBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunRifleT1HuntingRifle,ammo762mmBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardT1MachineGunBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunMGT1AK47,ammo762mmBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardT2HandgunBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunHandgunT2Magnum44,ammo44MagnumBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardT2ShotgunBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunShotgunT2PumpShotgun,ammoShotgunShell</set> 
+	<set xpath ="/items/item[@name='questRewardT2RifleBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunRifleT2LeverActionRifle,ammo762mmBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardT2MachineGunBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunMGT2TacticalAR,ammo762mmBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardT3HandgunBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunHandgunT3DesertVulture,ammo44MagnumBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardT3SMGBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunHandgunT3SMG5,ammo9mmBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardT3ShotgunBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunShotgunT3AutoShotgun,ammoShotgunShell</set> 
+	<set xpath ="/items/item[@name='questRewardT3RifleBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunRifleT3SniperRifle,ammo762mmBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardT3MachineGunBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunMGT3M60,ammo762mmBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardT3HandgunLegendaryBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunHandgunT3DesertVulture,ammo44MagnumBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardT3SMGLegendaryBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunHandgunT3SMG5,ammo9mmBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardT3ShotgunLegendaryBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunShotgunT3AutoShotgun,ammoShotgunShell</set> 
+	<set xpath ="/items/item[@name='questRewardT3RifleLegendaryBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunRifleT3SniperRifle,ammo762mmBulletBall</set> 
+	<set xpath ="/items/item[@name='questRewardT3MachineGunLegendaryBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunMGT3M60,ammo762mmBulletBall</set> 
+
 </configs>
