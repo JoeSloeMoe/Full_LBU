@@ -174,7 +174,7 @@
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Bartering_XP_Base" operation="set" value="6"/> <!--default: 6-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_DaringAdv_XP_Base" operation="set" value="6"/> <!--default: 6-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Physician_Use_XP_Base" operation="set" value="300"/> <!--default: 300 high because number of medical items used is far less than the number of bullets sprayed, rocks bashed etc-->
-			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_HiddenStrike_Kill_XP_Base" operation="set" value="72"/> <!--default: 72-->
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_HiddenStrike_Kill_XP_Base" operation="set" value="75"/> <!--default: 75-->
 			
 			<!--multiply each of the above vars by their respective INDIVIDUAL XP weight/percent increase (lbu_<PERKNAME>_Multiplier) from the config settings-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_DeadEye_Kill_XP_Base" operation="multiply" value="@lbu_DeadEye_XP_Multiplier"/> <!--default: 1.0. Higher number==Quicker Progress-->
@@ -239,9 +239,9 @@
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_PummelPete_DMG_XP_Base" operation="set" value="24"/> <!--default: 24-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_SkullCrusher_DMG_XP_Base" operation="set" value="24"/> <!--default: 24-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Brawler_DMG_XP_Base" operation="set" value="20"/> <!--default: 20-->
-			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_MachineGunner_DMG_XP_Base" operation="set" value="12"/> <!--default: 12-->
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_MachineGunner_DMG_XP_Base" operation="set" value="14"/> <!--default: 14-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Archery_DMG_XP_Base" operation="set" value="30"/> <!--default: 30-->
-			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Gunslinger_DMG_XP_Base" operation="set" value="12"/> <!--default: 12-->
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Gunslinger_DMG_XP_Base" operation="set" value="14"/> <!--default: 14-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_DeepCuts_DMG_XP_Base" operation="set" value="20"/> <!--default: 20-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Electrocutioner_DMG_XP_Base" operation="set" value="20"/> <!--default: 20-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Robotics_DMG_XP_Base" operation="set" value="22"/> <!--default: 22-->
@@ -2805,4 +2805,5 @@
 	<!--END buff name="perkPhysician"-->
 	
 </configs>
+
 
