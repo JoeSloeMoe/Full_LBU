@@ -375,13 +375,7 @@
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="lbu_PhysicianUseCounter" operation="add" value="1"/>
 		</effect_group>
 	</append>
-	
-	<!--
-		Medical splints and casts can heal sprains If
-			perkPhysician is at max level
-			Player hasnt invested in the game's perkPhysician skill (player can already heal with splints if perkPhysician >=1)
-			lbu_PhysicianBonus is set to 1 in the config settings
-	-->
+
 	<!--change all the conditional checks on perPhysician from 1 to 20-->
 	<set xpath="/items/item[@name='medicalSplint']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionEnd']/requirement[@name='ProgressionLevel' and @progression_name='perkPhysician' and @operation='GTE' and @value='1']/@value">20</set> 
 	<set xpath="/items/item[@name='medicalSplint']/effect_group/requirement[@name='ProgressionLevel' and @progression_name='perkPhysician' and @operation='GTE' and @value='1']/@value">20</set> 
@@ -649,6 +643,7 @@
 		perkDemolitionsExpert doesnt return true for requirements statements if the tags are not re-added. (not sure why)
 		e.g. <requirement name="ItemHasTags" tags="perkDemolitionsExpert"/> : returns false for ammoCrossbowBoltExploding even though it has the tag perkDemolitionsExpert in the default code definition-->
 	<set xpath ="/items/item[@name='ammoCrossbowBoltExploding']/property[@name='Tags']/@value">ammo,ranged,attAgility,perkArchery,perkPenetrator,perkDemolitionsExpert</set> 
+	<set xpath ="/items/item[@name='ammoArrowExploding']/property[@name='Tags']/@value">ammo,ranged,attAgility,perkArchery,perkPenetrator,perkDemolitionsExpert</set> 
 	<!--END Learn by use code-->
 	
 	<!--remove the requirements to read magazines to craft pipebombs.
