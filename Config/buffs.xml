@@ -2129,6 +2129,11 @@
 					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_traderQuestsEnabled" operation="add" value="1"> 
 						<requirement name="ProgressionLevel" progression_name="perkDaringAdventurer" operation="EQ" value="100"/>
 					</triggered_effect>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="Bonus: Can now Reset Quests at traders!">
+						<requirement name="ProgressionLevel" progression_name="perkDaringAdventurer" operation="EQ" value="100"/>
+					</triggered_effect>
+					
+					
 
 			</effect_group>
 			<effect_group>	
