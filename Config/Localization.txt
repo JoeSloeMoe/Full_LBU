@@ -47,7 +47,7 @@ lbu_MULTIPLAYERTURRETS_END,progression,Perk,,,"Multiplayer Turret Note, DELETE T
 lbu_BarteringName,progression,Perk,,,"Better Barter [DECEA3]{cvar($lbu_Bartering_LevelXP:0)}xp To Next Level[-]" 
 lbu_BarteringDesc,progression,Perk,,,"Trade items with Traders to upgrade the Bartering skill points. Increase both Buying and Selling."
 lbu_DaringAdvName,progression,Perk,,,"Daring Adventure [DECEA3]{cvar($lbu_DaringAdv_LevelXP:0)}xp To Next Level[-]"  
-lbu_DaringAdvDesc,progression,Perk,,,"Complete Trader Quests to upgrade the Daring Adventure skill points. Increase the Trader Stage and get Better rewards."
+lbu_DaringAdvDesc,progression,Perk,,,"Complete Trader Quests to upgrade the Daring Adventure skill points. Increase the Trader Stage and get Better rewards. When Daring Adventurer is max level you can Reset Quests at Traders."
 lbu_PhysicianName,progression,Perk,,,"Physician [DECEA3]{cvar($lbu_Physician_LevelXP:0)}xp To Next Level[-]" 
 lbu_PhysicianDesc,progression,Perk,,,"Use healing items such as medical items and food to upgrade the Physician skill points.\nThe EntityHeal value below is the increase in healing over time from Medical Items. PlayerExpGain is the increase in player experience when using medical items.\nAt level 30 Splints & Casts will heal sprains, at level 60 Casts cure broken limbs, 10% chance of instant death for Stun Battons at level 100."
 statEntityHeal,ui_display,Item stat,,,Health Heal Over Time
