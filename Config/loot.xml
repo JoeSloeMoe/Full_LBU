@@ -85,7 +85,7 @@
 			<item name="resourceForgedSteel" count="1,4" loot_prob_template="veryLow"/>
 		</lootgroup>
 	</insertAfter>	
-	<remove xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT0']/item[@name='vehiclesSkillMagazine']"/>
+	<!--<remove xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT0']/item[@name='vehiclesSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT1']/item[@name='vehiclesSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT2']/item[@name='vehiclesSkillMagazine']"/>
 	
@@ -94,7 +94,7 @@
 	<remove xpath="/lootcontainers/lootgroup[@name='groupWorkingStiffsBooks']/item[@name='sledgehammersSkillMagazine']"/>
 	<append xpath="/lootcontainers/lootgroup[@name='groupWorkingStiffsBooks']">
 		<item name="resourcePaper"/>
-	</append>
+	</append>-->
 	
 	<remove xpath="/lootcontainers/lootgroup[@name='groupWorkingStiffsMagazines']/item[@name='harvestingToolsSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupWorkingStiffsMagazines']/item[@name='salvageToolsSkillMagazine']"/>
@@ -116,11 +116,11 @@
 	<remove xpath="/lootcontainers/lootgroup[@name='groupPassNGas01']/item[@name='salvageToolsSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupPassNGas03']/item[@name='harvestingToolsSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupPassNGas03']/item[@name='salvageToolsSkillMagazine']"/>	
-	
+	<!--
 	<remove xpath="/lootcontainers/lootgroup[@name='groupSavageCountryBooks']/item[@name='bowsSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupSavageCountryBooks']/item[@name='spearsSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupSavageCountryBooks']/item[@name='bladesSkillMagazine']"/>
-	<remove xpath="/lootcontainers/lootgroup[@name='groupSavageCountryBooks']/item[@name='clubsSkillMagazine']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='groupSavageCountryBooks']/item[@name='clubsSkillMagazine']"/>-->
 	
 	<remove xpath="/lootcontainers/lootgroup[@name='groupSavageCountryCrate01']/item[@name='bowsSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupSavageCountryCrate01']/item[@name='spearsSkillMagazine']"/>
@@ -164,7 +164,7 @@
 	<remove xpath="/lootcontainers/lootgroup[@name='groupLiquorBonus']/item[@name='riflesSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupLiquorBonus']/item[@name='machineGunsSkillMagazine']"/>
 
-	<remove xpath="/lootcontainers/lootgroup[@name='groupShotgunMessiahCrateBooks']/item[@name='handgunsSkillMagazine']"/>
+	<!--<remove xpath="/lootcontainers/lootgroup[@name='groupShotgunMessiahCrateBooks']/item[@name='handgunsSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupShotgunMessiahCrateBooks']/item[@name='shotgunsSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupShotgunMessiahCrateBooks']/item[@name='riflesSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupShotgunMessiahCrateBooks']/item[@name='machineGunsSkillMagazine']"/>
@@ -177,7 +177,7 @@
 	<remove xpath="/lootcontainers/lootgroup[@name='groupPopNPillsBooks']/item[@name='knucklesSkillMagazine']"/>
 	<append xpath="/lootcontainers/lootgroup[@name='groupPopNPillsBooks']">
 		<item name="resourcePaper" />
-	</append>
+	</append>-->
 	
 	<remove xpath="/lootcontainers/lootgroup[@name='groupPopNPillsCrate02']/item[@name='medicalSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupPopNPillsCrate02']/item[@name='knucklesSkillMagazine']"/>
@@ -190,7 +190,7 @@
 	
 	<remove xpath="/lootcontainers/lootgroup[@name='groupLootChestBonusItems']/item[@name='harvestingToolsSkillMagazine']"/>
 	<remove xpath="/lootcontainers/lootgroup[@name='groupLootChestBonusItems']/item[@name='salvageToolsSkillMagazine']"/>
-	<remove  xpath="lootcontainers/lootgroup[@name='booksAllScaled']/item[@group='skillMagazines']"/>
+	<!--<remove  xpath="lootcontainers/lootgroup[@name='booksAllScaled']/item[@group='skillMagazines']"/>-->
 	<remove  xpath="lootcontainers/lootgroup[@name='groupCrackabookCrate02']/item[@group='skillMagazines']"/>
 	<remove  xpath="lootcontainers/lootgroup[@name='groupDewCollectorLoot01']/item[@name='workstationSkillMagazine']"/>
 	
@@ -213,8 +213,8 @@
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupHiddenStash01']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupBackpacksBooks']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupBackpacksBooks']/item[@group='perkBooks']" name="loot_prob_template">veryLow</setattribute>
-	<setattribute  xpath="lootcontainers/lootgroup[@name='groupSchematicsAll']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
-	<setattribute  xpath="lootcontainers/lootgroup[@name='booksRareOnlyScaled']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
+	<!--<setattribute  xpath="lootcontainers/lootgroup[@name='groupSchematicsAll']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
+	<setattribute  xpath="lootcontainers/lootgroup[@name='booksRareOnlyScaled']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>-->
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupCampingTents01']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupCampingTents01']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupCampingTents01']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
@@ -224,7 +224,7 @@
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupZpackReg02']/item[@group='groupChallengeRewardSkillMagazinesAll']" name="loot_prob_template">low</setattribute>
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupZpackBoss02']/item[@group='groupChallengeRewardSkillMagazinesAll']" name="loot_prob_template">low</setattribute>
 	
-	<setattribute  xpath="lootcontainers/lootgroup[@name='booksRareOnlyScaled']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
+	<!--<setattribute  xpath="lootcontainers/lootgroup[@name='booksRareOnlyScaled']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>-->
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupReinforcedChestT3_05']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupHardenedChestT4_07']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupHardenedChestT5_05']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
