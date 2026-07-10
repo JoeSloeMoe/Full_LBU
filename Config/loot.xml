@@ -198,7 +198,8 @@
 	<remove  xpath="lootcontainers/lootgroup[@name='groupHiddenStash02']/item[@name='workstationSkillMagazine']"/>
 	<remove  xpath="lootcontainers/lootgroup[@name='groupAirDrop03']/item[@name='workstationSkillMagazine']"/>
 	<remove  xpath="lootcontainers/lootgroup[@name='groupBackpacks01']/item[@group='skillMagazines']"/>
-
+	<remove xpath="/lootcontainers/lootgroup[@name='groupShotgunMessiahCrate02']/item[@group='groupShotgunMessiahCrateMagazines']"/>
+	
 	<!--modify book case and mailbox etc loot-->
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupBookcase01']/item[@group='skillMagazines']" name="count">1,2</setattribute>
 	<setattribute  xpath="lootcontainers/lootgroup[@name='groupBookcase01']/item[@group='skillMagazines']" name="loot_prob_template">low</setattribute>
