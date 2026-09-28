@@ -72,6 +72,14 @@
 			<item name="trapsSkillMagazine" />
 		</lootgroup>
 	</insertAfter>	
+	<remove xpath="/lootcontainers/lootgroup[@name='groupSavageCountryMagazines']"/>
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupToilet']">
+		<lootgroup name="groupSavageCountryMagazines" abundance_type="Magazines">
+			<item name="armorSkillMagazine"/>
+			<item name="repairToolsSkillMagazine"/>
+			<item name="vehiclesSkillMagazine" />
+		</lootgroup>
+	</insertAfter>	
 	<remove xpath="/lootcontainers/lootgroup[@name='groupRollingToolbox03']"/>
 	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupRollingToolbox02']">
 		<lootgroup name="groupRollingToolbox03">
