@@ -78,7 +78,5 @@ Version Info
   - Optimised monitoring code for several Perks.
   - Corrected some minor coding bugs.
   
-3.0.0 30th June 2026
-  - 7DTD 3.0 compatible update
-  - Changed left-of-the-dot version number to match 7DTD release version (so jumped from 1.0.5 to 3.0.0)
-  
+3.0.2 10 Oct 2026
+  - Adjusted magazine loot to cater for new Backpack magazines
