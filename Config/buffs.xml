@@ -195,7 +195,7 @@
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Robotics_Kill_XP_Base" operation="set" value="40"/> <!--default: 40-->
 			<!--lbu_Bartering_XP_Base & lbu_DaringAdv_XP_Base are multipliers see buffLbuBartering & buffLbuDaringAdv--> 
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Bartering_XP_Base" operation="set" value="6"/> <!--default: 6-->
-			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_DaringAdv_XP_Base" operation="set" value="6"/> <!--default: 6-->
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_DaringAdv_XP_Base" operation="set" value="5"/> <!--default: 5-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Physician_Use_XP_Base" operation="set" value="300"/> <!--default: 300 high because number of medical items used is far less than the number of bullets sprayed, rocks bashed etc-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_HiddenStrike_Kill_XP_Base" operation="set" value="77"/> <!--default: 77-->
 			
